@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 暴龙哥的技术博客
 subtitle:
-description:
-keywords:
-author: John Doe
-language:
+description: Biglone' blogs
+keywords: Biglone, C++, Qt
+author: Biglone
+language: zh-CN
 timezone:
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: apollo
+theme: BlueLake
 
 # 在归档页面显示所有文章
 # 需要上面安装的 hexo-generator-archive 插件支持
@@ -89,3 +89,8 @@ deploy:
   type: git
   repository: https://github.com/biglone/biglone.github.io.git
   branck: master
+
+
+#######################
+stylus:
+  compress: true
