@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-17T00:42:39.732Z</updated>
+  <updated>2018-09-17T02:19:05.711Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>testAutoOpen</title>
+    <link href="http://yoursite.com/2018/09/17/testAutoOpen-2/"/>
+    <id>http://yoursite.com/2018/09/17/testAutoOpen-2/</id>
+    <published>2018-09-17T02:19:05.000Z</published>
+    <updated>2018-09-17T02:19:05.711Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>testAutoOpen</title>
+    <link href="http://yoursite.com/2018/09/17/testAutoOpen-1/"/>
+    <id>http://yoursite.com/2018/09/17/testAutoOpen-1/</id>
+    <published>2018-09-17T02:17:18.000Z</published>
+    <updated>2018-09-17T02:37:17.336Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="大家好"><a href="#大家好" class="headerlink" title="大家好"></a>大家好</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;大家好&quot;&gt;&lt;a href=&quot;#大家好&quot; class=&quot;headerlink&quot; title=&quot;大家好&quot;&gt;&lt;/a&gt;大家好&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>testAutoOpen</title>
+    <link href="http://yoursite.com/2018/09/17/testAutoOpen/"/>
+    <id>http://yoursite.com/2018/09/17/testAutoOpen/</id>
+    <published>2018-09-17T02:16:27.000Z</published>
+    <updated>2018-09-17T02:16:27.509Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>RAII（2018.09.14）</title>
