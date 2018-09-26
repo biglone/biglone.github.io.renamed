@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-17T09:02:08.594Z</updated>
+  <updated>2018-09-26T01:47:02.145Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-09-26Diary</title>
+    <link href="http://yoursite.com/2018/09/26/2018-09-26Diary/"/>
+    <id>http://yoursite.com/2018/09/26/2018-09-26Diary/</id>
+    <published>2018-09-26T00:58:42.000Z</published>
+    <updated>2018-09-26T01:47:02.145Z</updated>
+    
+    <content type="html"><![CDATA[<p>#昨日种种譬如昨日死，从后种种譬如今日生。</p><p>今日读《曾国藩的正面与侧面2》有感，对其弟的包容与关爱超出常人，曾国荃率性冲动的性格多次犯错，曾国藩总是一边批评指出其错误，一边又宽慰让其不必过于郁郁而伤身，正如曾国藩给曾国荃引用袁了凡的那句话：昨日种种譬如昨日死，从后种种譬如今日生。大丈夫如何能够整日低眉顺目，碌碌无为，立志吧。</p><p>我该立怎样的志呢？目前沒个方向，沒个思路，参看横渠四句，大概求一个低标准来要求自己，放在当下莫过于，做一个正直的人，踏实的人，有益于亲友、有益于社会、有益于国家的人。</p><p>目前我自身的能力真真做不到有益于社会、国家甚至于益于亲友也难做到。先完善自我，日日提高自我，日日进步，才能有所作为，看见希望。</p><p>自今日起，每天都要进步，学着定立日课</p><p>2018.09.26 日课内容：</p><ol><li>吉他练习30分钟。</li><li>学习一条git命令，使用git help [command]的方式。阅读《Git权威指南》共计一小时。</li><li>阅读《SQLite权威指南》 一个小时</li></ol><p>自己总结日课情况。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#昨日种种譬如昨日死，从后种种譬如今日生。&lt;/p&gt;
+&lt;p&gt;今日读《曾国藩的正面与侧面2》有感，对其弟的包容与关爱超出常人，曾国荃率性冲动的性格多次犯错，曾国藩总是一边批评指出其错误，一边又宽慰让其不必过于郁郁而伤身，正如曾国藩给曾国荃引用袁了凡的那句话：昨日种种譬如昨日死，
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>testAutoOpen</title>
@@ -152,22 +176,6 @@
       
     
     </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MyFirstBlog.md</title>
-    <link href="http://yoursite.com/2018/09/02/MyFirstBlog-md/"/>
-    <id>http://yoursite.com/2018/09/02/MyFirstBlog-md/</id>
-    <published>2018-09-02T07:11:55.000Z</published>
-    <updated>2018-09-17T09:01:52.313Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="test2" scheme="http://yoursite.com/categories/test2/"/>
     
     
   </entry>
