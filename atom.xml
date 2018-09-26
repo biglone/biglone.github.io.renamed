@@ -60,7 +60,7 @@
     <link href="http://yoursite.com/2018/09/17/testAutoOpen/"/>
     <id>http://yoursite.com/2018/09/17/testAutoOpen/</id>
     <published>2018-09-17T02:16:27.000Z</published>
-    <updated>2018-09-17T09:01:59.619Z</updated>
+    <updated>2018-09-17T09:28:34.764Z</updated>
     
     <summary type="html">
     
@@ -69,6 +69,8 @@
       <category term="test2" scheme="http://yoursite.com/categories/test2/"/>
     
     
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
   </entry>
   
   <entry>
@@ -76,7 +78,7 @@
     <link href="http://yoursite.com/2018/09/14/RAII(2018-09-14)/"/>
     <id>http://yoursite.com/2018/09/14/RAII(2018-09-14)/</id>
     <published>2018-09-14T11:26:27.000Z</published>
-    <updated>2018-09-17T03:01:24.314Z</updated>
+    <updated>2018-09-17T09:20:25.052Z</updated>
     
     <content type="html"><![CDATA[<p>#RAII(Resource Acquisition Is Initialization)</p><p>&emsp;&emsp;RAII是resource acquisition is initialization的缩写，意思就是“资源获取即初始化”。它是由C++之父Bjarne Stroustrup提出的一个设计理念，其核心思想就是将资源和对象的生命周期绑定，对象创建时获取资源，对象销毁则释放资源。在RAII的指导下，C++把底层的资源管理问题提升到了对对象生命周期管理的更高层次。</p><p>&emsp;&emsp;C++ RAII提现出了简洁、安全、实时的特点：</p><blockquote><ul><li>概念简洁性:让资源（包括内存和非内存资源）和对象的生命周期绑定，资源的设计者只需用在类定义内部处理资源问题，提高了程序的可维护性</li><li>类型安全性：通过资源代理对象包装资源（指针变量），并利用运算符重载提供指针运算方便使用，但对外暴露类型安全的接口</li><li>异常安全性：栈语义保证对象析构函数的调用，提高了程序的健壮性</li><li>释放实时性：和GC相比，RAII达到了和手动释放资源一样的实时性，因此可以承担底层开发的重任</li></ul></blockquote><p>&emsp;&emsp;至于C++ RAII的实现，往往会使用到C++的智能指针，关于智能指针的使用，这里只介绍<strong>auto_ptr</strong>的使用。</p><p>&emsp;&emsp;<strong>auto_ptr</strong>的使用注意事项：</p><blockquote><ol><li>auto_ptr不能共享所有权，资源所有权可以转移。</li><li>auto_ptr不能指向数组（为什么？）。</li><li>auto_ptr不能作为容器的成员（为什么？）。</li><li>不能通过复制操作来初始化auto_ptr<br>这是因为auto_ptr的构造函数被定义为了explicit</li></ol></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">std</span>::<span class="built_in">auto_ptr</span>&lt;<span class="keyword">int</span>&gt; p(<span class="keyword">new</span> <span class="keyword">int</span>(<span class="number">42</span>));     <span class="comment">//OK</span></span><br><span class="line"><span class="built_in">std</span>::suto_ptr&lt;<span class="keyword">int</span>&gt; p = <span class="keyword">new</span> <span class="keyword">int</span>(<span class="number">42</span>);    <span class="comment">//ERROR</span></span><br><span class="line">```</span><br><span class="line">&amp;emsp;&amp;emsp;下面便是在C++ 中实现RAII的典型代码：</span><br><span class="line">```cpp</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">file</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">file(<span class="keyword">const</span> <span class="built_in">string</span>&amp; name)</span><br><span class="line">&#123;</span><br><span class="line">m_fileHandle = fopen(name.cstr());</span><br><span class="line">&#125;</span><br><span class="line">~file()</span><br><span class="line">&#123;</span><br><span class="line">fclose(m_fileHandle);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//...</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">handel m_fileHandle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;下面的代码为调用上面的类。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func1</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="function">file <span class="title">myFile</span><span class="params">(<span class="string">"my.txt"</span>)</span></span>;</span><br><span class="line"><span class="comment">//file operation</span></span><br><span class="line">&#125;<span class="comment">//此处销毁对象，释放资源</span></span><br></pre></td></tr></table></figure></p><p>&emsp;&emsp;当函数结束时，局部对象myFile的生命周期也结束了，析构函数便会被调用，资源会得到释放。而且，如果函数中的代码抛出异常，那么析构函数也会被调用，资源同样会得到释放。所以，在RAII下，不仅仅资源安全，也是异常安全的。</p><p>&emsp;&emsp;但是，在下面的代码中资源是不安全的，尽管我们实现了RAII。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func2</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">file pFile = <span class="keyword">new</span> file(<span class="string">"my.txt"</span>);</span><br><span class="line"><span class="comment">// file operation</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>&emsp;&emsp;由于这里在堆中创建了一个对象，但是却没有对其释放显示释放<strong>delete pFile</strong>，即便是加上这一句也不能保证程序的异常安全性，因为一旦发生异常该语句就有被忽略执行的风险。</p><p>&emsp;&emsp;所有在没有GC的情况下想要确保资源安全和异常安全，那么有必要使用智能指针。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func3</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">auto_ptr</span>&lt;file&gt; spFile(<span class="keyword">new</span> file(<span class="string">"my.txt"</span>));</span><br><span class="line"><span class="comment">//file operation</span></span><br><span class="line">&#125;<span class="comment">//此处，spFile结束生命周期的时候，会释放对象。</span></span><br></pre></td></tr></table></figure></p><p><em>**此处有一疑问：如果担心使用对象在离开函数体后不被释放的问题，为什么不在栈上创建对象？话说auto_ptr的使用方法是怎样的？</em></p>]]></content>
     
@@ -91,6 +93,8 @@
     </summary>
     
     
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
   </entry>
   
   <entry>
@@ -98,7 +102,7 @@
     <link href="http://yoursite.com/2018/09/03/2018-09-03/"/>
     <id>http://yoursite.com/2018/09/03/2018-09-03/</id>
     <published>2018-09-03T11:26:27.000Z</published>
-    <updated>2018-09-17T09:01:06.475Z</updated>
+    <updated>2018-09-17T09:28:12.394Z</updated>
     
     <summary type="html">
     
@@ -106,6 +110,8 @@
     
       <category term="test1" scheme="http://yoursite.com/categories/test1/"/>
     
+    
+      <category term="C++11" scheme="http://yoursite.com/tags/C-11/"/>
     
   </entry>
   
@@ -114,7 +120,7 @@
     <link href="http://yoursite.com/2018/09/02/2345/"/>
     <id>http://yoursite.com/2018/09/02/2345/</id>
     <published>2018-09-02T10:58:33.000Z</published>
-    <updated>2018-09-17T09:01:16.866Z</updated>
+    <updated>2018-09-17T09:25:25.318Z</updated>
     
     <summary type="html">
     
@@ -123,6 +129,8 @@
       <category term="test1" scheme="http://yoursite.com/categories/test1/"/>
     
     
+      <category term="MFC" scheme="http://yoursite.com/tags/MFC/"/>
+    
   </entry>
   
   <entry>
@@ -130,17 +138,17 @@
     <link href="http://yoursite.com/2018/09/02/123/"/>
     <id>http://yoursite.com/2018/09/02/123/</id>
     <published>2018-09-02T10:16:44.458Z</published>
-    <updated>2018-09-17T09:00:38.195Z</updated>
+    <updated>2018-09-17T09:28:07.947Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 123<br>date: 2018-09-02 18:16:44<br>tags:  </p><h2 id="categories-test1"><a href="#categories-test1" class="headerlink" title="categories: test1  "></a>categories: test1  </h2><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: 123<br>date: 2018-09-02 18:16:44<br>categories: test1  </p><h2 id="tags-C-11"><a href="#tags-C-11" class="headerlink" title="tags: C++11"></a>tags: C++11</h2><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>]]></content>
     
     <summary type="html">
     
       
       
         &lt;hr&gt;
-&lt;p&gt;title: 123&lt;br&gt;date: 2018-09-02 18:16:44&lt;br&gt;tags:  &lt;/p&gt;
-&lt;h2 id=&quot;categories-test1&quot;&gt;&lt;a href=&quot;#categories-test1&quot; class=&quot;headerlink&quot; titl
+&lt;p&gt;title: 123&lt;br&gt;date: 2018-09-02 18:16:44&lt;br&gt;categories: test1  &lt;/p&gt;
+&lt;h2 id=&quot;tags-C-11&quot;&gt;&lt;a href=&quot;#tags-C-11&quot; class=&quot;headerlink&quot; title=
       
     
     </summary>
@@ -169,7 +177,7 @@
     <link href="http://yoursite.com/2018/09/02/hello-world/"/>
     <id>http://yoursite.com/2018/09/02/hello-world/</id>
     <published>2018-09-02T04:55:26.146Z</published>
-    <updated>2018-08-31T07:54:46.108Z</updated>
+    <updated>2018-09-17T09:19:25.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -182,6 +190,8 @@
     
     </summary>
     
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
