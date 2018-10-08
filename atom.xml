@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-27T00:53:09.728Z</updated>
+  <updated>2018-09-29T06:54:35.280Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2018-09-27Diary</title>
-    <link href="http://yoursite.com/2018/09/27/2018-09-27Diary/"/>
-    <id>http://yoursite.com/2018/09/27/2018-09-27Diary/</id>
-    <published>2018-09-27T00:43:19.000Z</published>
-    <updated>2018-09-27T00:53:09.728Z</updated>
+    <title>2018-09-28-Diary</title>
+    <link href="http://yoursite.com/2018/09/29/2018-09-28-Diary/"/>
+    <id>http://yoursite.com/2018/09/29/2018-09-28-Diary/</id>
+    <published>2018-09-28T23:51:19.000Z</published>
+    <updated>2018-09-29T06:54:35.280Z</updated>
     
-    <content type="html"><![CDATA[<p>日课：<br>1、学习五线谱，花30分钟练习吉他。</p><p>2、阅读《Git权威指南》共计一小时。</p><p>3、 阅读《SQLite权威指南》 一个小时。</p><p>共计3小时。</p>]]></content>
+    <content type="html"><![CDATA[<p>日课：<br>1、学习五线谱，花30分钟练习吉他。</p><p>2、阅读《Git权威指南》共计一小时。</p><p>3、 阅读《SQLite权威指南》 一个小时。</p><p>共计3小时。</p><hr><p>日课总结：</p><ol start="2"><li>阅读《SQLite权威指南》<br>存储类：integer、real、text、blob、NULL。<br>排序则按照:NULL &lt; integer &lt; real &lt; text &lt; blob.</li></ol><p>视图即虚拟表，也称为派生表，因为它们的内容都派生自其它表的查询结果。</p>]]></content>
     
     <summary type="html">
     
@@ -33,7 +33,37 @@
 &lt;p&gt;2、阅读《Git权威指南》共计一小时。&lt;/p&gt;
 &lt;p&gt;3、 阅读《SQLite权威指南》 一个小时。&lt;/p&gt;
 &lt;p&gt;共计3小时。&lt;/p&gt;
-
+&lt;hr&gt;
+&lt;p&gt;日课总结：&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;l
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-09-27Diary</title>
+    <link href="http://yoursite.com/2018/09/27/2018-09-27Diary/"/>
+    <id>http://yoursite.com/2018/09/27/2018-09-27Diary/</id>
+    <published>2018-09-27T00:43:19.000Z</published>
+    <updated>2018-09-28T00:31:52.041Z</updated>
+    
+    <content type="html"><![CDATA[<p>日课：<br>1、学习五线谱，花30分钟练习吉他。</p><p>2、阅读《Git权威指南》共计一小时。</p><p>3、 阅读《SQLite权威指南》 一个小时。</p><p>共计3小时。</p><p>今日晚饭吃的过多，导致肚子撑，读书难于集中精神，明日可将米饭减半。</p><p>总体完成度 70%， 加油。</p><hr><p>内容回顾：<br>关于阅读《SQLite权威指南》的学习内容主要是数据完整性这一块内容。<br>数据完整性包括：域完整性、实体完整性、引用完整性和用户定义完整性。<br>域完整性涉及控制字段的值；实体完整性涉及表的；引用完整性涉及表之间的行，具体讲就是外键关系；用户定义完整性则包罗万象。</p><p>实体完整性：说白了就是为了保证区分行与行的唯一性，而这种唯一性往往通过主键来保证。当定义一个表的时候总是需要确定一个主键，而SQLite提供了一个名为rowid的64-bit整形字段，并且该字段具有自动增长特性。<br>在自动增长的过程中，rowid有可能被回收使用，如果想确保不被回收，则需要在 integer primary key后加上 autoincrement。</p><p>域完整性：域处理两件事情：类型和范围，因此域完整性则包含两部分：类型检查和范围检查。本章暂不介绍类型检查，只介绍了范围检查：默认值、NOT NULL、check外键约束。</p><p>阅读《Git权威指南》<br>阅读了第四章的第一小节，该部分内容主要是介绍Git的基本概念。<br>所谓的Git版本库（repository）只是一个简单的数据库，其中包括所有用来维护与管理项目的修订版本和历史信息。<br>克隆操作（clone）是不会将配置设置信息转移的。<br>Git维护的主要数据结构有两个：<strong>对象库（object store）和索引（index）</strong><br>对象库是Git版本库实现的心脏。它包含<strong>原始数据文件、所有日志消息、作者信息、日期、用来创建项目任意版本或分支的信息</strong></p><p>Git放在对象库里的对象只有4中类型：<strong>块（blob）、目录树（tree）、提交（commit）、和标签（tag）</strong>。这4中原子对象构成了Git高层数据结构的基础。</p><p>块（blob）文件的每一个版本表示一个blob。blob(binary large object)保存的是文件数据，但不包含任何关于这个文件的元数据。</p><p>目录树（tree）一个目录树（tree）对象代表一层目录信息。它记录blob标识符（？？？）、路径名和在一个目录的所有文件的一些元数据。</p><p>提交（commit）提交对象保存版本库每次变化的元数据，包括作者、提交者、提交日期和日志消息。每一个提交对象指向一个目录树对象。</p><p>标签（tag）一个标签对象分配一个任意的且人类可读的名字给一个特定对象，通常是一个提交对象。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;日课：&lt;br&gt;1、学习五线谱，花30分钟练习吉他。&lt;/p&gt;
+&lt;p&gt;2、阅读《Git权威指南》共计一小时。&lt;/p&gt;
+&lt;p&gt;3、 阅读《SQLite权威指南》 一个小时。&lt;/p&gt;
+&lt;p&gt;共计3小时。&lt;/p&gt;
+&lt;p&gt;今日晚饭吃的过多，导致肚子撑，读书难于集中精神，明日可将米饭减半
       
     
     </summary>
