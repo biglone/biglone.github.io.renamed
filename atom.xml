@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-29T06:54:35.280Z</updated>
+  <updated>2018-10-09T00:21:44.509Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-10-08Diary</title>
+    <link href="http://yoursite.com/2018/10/09/2018-10-08Diary/"/>
+    <id>http://yoursite.com/2018/10/09/2018-10-08Diary/</id>
+    <published>2018-10-09T00:10:31.000Z</published>
+    <updated>2018-10-09T00:21:44.509Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="日课"><a href="#日课" class="headerlink" title="日课"></a>日课</h2><ol><li>吉他练习。<br>时长：一小时+<br>内容：爬格子，《我真的受伤了》片段。</li></ol><p>效果：熟练度提升。</p><ol start="2"><li>《Git权威指南》<br>时长：一小时-<br>内容：相对提交名，提交图。</li></ol><p>效果：印象不深，期间有间断，与人聊微信，明日集中精力和时间来学习。</p><ol start="3"><li>《Qt》<br>时长：30分钟。<br>内容：关于多线程编程。</li></ol><p>效果：效果不佳，心思不集中。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;日课&quot;&gt;&lt;a href=&quot;#日课&quot; class=&quot;headerlink&quot; title=&quot;日课&quot;&gt;&lt;/a&gt;日课&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;吉他练习。&lt;br&gt;时长：一小时+&lt;br&gt;内容：爬格子，《我真的受伤了》片段。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;效果：熟练度提升。&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>2018-09-28-Diary</title>
