@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-09T00:21:44.509Z</updated>
+  <updated>2018-10-10T01:25:39.792Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-10-10Diary</title>
+    <link href="http://yoursite.com/2018/10/10/2018-10-10Diary/"/>
+    <id>http://yoursite.com/2018/10/10/2018-10-10Diary/</id>
+    <published>2018-10-10T00:52:27.000Z</published>
+    <updated>2018-10-10T01:25:39.792Z</updated>
+    
+    <content type="html"><![CDATA[<p>#日课</p><p>1.吉他练习<br>时长：一小时<br>内容：爬格子，《菊花台》片段、《我真的受伤了》片段</p><p>效果：熟练度提升<br>评价：C大调，第二种的音名未标注。需要学习五线谱的相关知识。</p><ol start="2"><li>《Qt》<br>时长：一小时<br>内容：QThread，多线程编程</li></ol><p>效果：信号量的部分能够理解，但是涉及到Mutex的部分不太理解（QWaitCondition配合QMutex的使用），QConurrent的使用也不太了解其使用方法及使用情形。</p><ol start="3"><li>《Git权威指南》<br>时长：半个小时+<br>内容：Git 提交范围的相关内容。</li></ol><p>效果：范围：用commit1..commit2,“有尾无首”，in end but not in start.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#日课&lt;/p&gt;
+&lt;p&gt;1.吉他练习&lt;br&gt;时长：一小时&lt;br&gt;内容：爬格子，《菊花台》片段、《我真的受伤了》片段&lt;/p&gt;
+&lt;p&gt;效果：熟练度提升&lt;br&gt;评价：C大调，第二种的音名未标注。需要学习五线谱的相关知识。&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;《Qt》&lt;br
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>2018-10-08Diary</title>
