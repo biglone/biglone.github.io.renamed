@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-11T02:00:50.951Z</updated>
+  <updated>2018-10-11T07:34:43.518Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/10/11/2018-10-11Diary/"/>
     <id>http://yoursite.com/2018/10/11/2018-10-11Diary/</id>
     <published>2018-10-11T00:20:32.000Z</published>
-    <updated>2018-10-11T02:00:50.951Z</updated>
+    <updated>2018-10-11T07:34:43.518Z</updated>
     
     <content type="html"><![CDATA[<p>#日课<br>1.吉他练习<br>半小时+<br>明日将C大调的两种音阶标注音阶名称。</p><ol start="2"><li>《Git》<br>一小时+<br>内容：检出分支。<br>①有未提交（有变更但是变更既没有add也没有commit）的更改时进行检出会提示失败。<br>②合并变更到不同分支：<br>当想要将当前分支的修改合并到待检出的其他分支上时可以使用下面的命令： <pre><code>git checkout -m dev</code></pre></li></ol><p>注意：本次的合并操作完全发生在工作目录中，本地的修改与目标分支合并，并留在工作目录中？（这里需要实际测试一下）</p><p>③创建并检出新分支：</p><pre><code>git branchgit checkout -b bug/pr-3git show-branch</code></pre><p>将当前工作目录的修改直接作加入到新分支。</p><p>④分离HEAD分支</p><p>当试图检出提交时Git会创建一种匿名分支，称为一个分离的HEAD（detached HEAD）有下面几种情况，Git会创建一个分离的HEAD。</p><ul><li>检出的提交不是分支的头部。</li><li>检出一个追踪分支。</li><li>检出标签引用的提交。</li><li>启动一个git bisect。</li><li>使用 git submodule update命令。</li></ul><p>如果想要将分离HEAD保留，那么需要创建一个新分支：</p><pre><code>git checkout -d new_branch</code></pre>放弃该分离HEAD则可以直接切换至命名分支。<pre><code>git checkout master</code></pre><p>⑤删除分支</p><pre><code>git branch -d branch</code></pre><p>Git会阻止删除当前分支，因为删除当前分支会导致Git无法确定工作目录树在删除之后是一个什么状态。<br>同时Git也不会让你轻易删除一个包含不存在于当前分支中的提交的分支，也就是说待删除分支不是当前HEAD的祖先、该分支的开发线没有贡献给当前分支的开发。</p><p>Git不会保存任何形式的关于分支名创建、移动、操纵、合并或删除的历史记录。一旦某个分支名删除了，它就没有了。</p><p>然而，该分支上的提交历史记录是一个独立的问题。Git最终会删除那些不再引用的提交和不能从某些命名的引用可达的提交。如果想保留那些提交，必须将它们合并到不同的分支，或者用标签指向它们。</p>]]></content>
     
