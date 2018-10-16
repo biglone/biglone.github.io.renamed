@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-12T02:20:13.892Z</updated>
+  <updated>2018-10-16T01:02:46.165Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-10-16Diary</title>
+    <link href="http://yoursite.com/2018/10/16/2018-10-16Diary/"/>
+    <id>http://yoursite.com/2018/10/16/2018-10-16Diary/</id>
+    <published>2018-10-16T00:38:11.000Z</published>
+    <updated>2018-10-16T01:02:46.165Z</updated>
+    
+    <content type="html"><![CDATA[<p>#日课</p><p>《Git版本控制管理（第二版）》<br>时长：一个半小时<br>内容：<br>合并分支<br>分支合并的<br>git merge操作是区分上下文的，当前分支始终是目标分支，其他一个或多个分支始终合并到当前分支。</p><p>有冲突的合并：<br>.git/MERGE_HEAD 包含合并进来的提交的SHA1值。不必自己使用SHA1;任何时候提到MERGE_HEAD,Git都知道去查看那个文件。</p><p>.git/MERGE_MSG 包含当解决冲突后执行git commit命令时用到的默认合并消息。</p><p>Git的索引包含每个冲突文件的三个副本：合并基础、“我们的” 版本和“他 们的”版本。给这三个副本分配了各自的编号1、2、3。<br>查看索引项的存储，可以使用git ls-files底层命令。</p><p>冲突的版本（合并标记和所有内容）不存储在索引中。相反，它始终存储在工作目录中的文件里。当执行不带任何参数的git diff命令时，始终比较索引与工作目录中的内容。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#日课&lt;/p&gt;
+&lt;p&gt;《Git版本控制管理（第二版）》&lt;br&gt;时长：一个半小时&lt;br&gt;内容：&lt;br&gt;合并分支&lt;br&gt;分支合并的&lt;br&gt;git merge操作是区分上下文的，当前分支始终是目标分支，其他一个或多个分支始终合并到当前分支。&lt;/p&gt;
+&lt;p&gt;有冲突的合并：&lt;br&gt;.
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>2018-10-12Diary</title>
