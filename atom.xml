@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-16T01:02:46.165Z</updated>
+  <updated>2018-10-17T03:40:48.358Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-10-16-Diary</title>
+    <link href="http://yoursite.com/2018/10/17/2018-10-16-Diary/"/>
+    <id>http://yoursite.com/2018/10/17/2018-10-16-Diary/</id>
+    <published>2018-10-17T00:46:34.000Z</published>
+    <updated>2018-10-17T03:40:48.358Z</updated>
+    
+    <content type="html"><![CDATA[<p>#日课<br>1、吉他练习<br>时长：20分钟<br>内容：爬格子、熟练度。</p><p>总结：太过放纵自己，空闲时间少看YouTube，控制自己。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#日课&lt;br&gt;1、吉他练习&lt;br&gt;时长：20分钟&lt;br&gt;内容：爬格子、熟练度。&lt;/p&gt;
+&lt;p&gt;总结：太过放纵自己，空闲时间少看YouTube，控制自己。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>2018-10-16Diary</title>
