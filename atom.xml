@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-17T03:46:42.577Z</updated>
+  <updated>2018-10-23T01:15:55.264Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-20-22-Diary</title>
+    <link href="http://yoursite.com/2018/10/23/2018-10-22-Diary/"/>
+    <id>http://yoursite.com/2018/10/23/2018-10-22-Diary/</id>
+    <published>2018-10-23T00:32:38.000Z</published>
+    <updated>2018-10-23T01:15:55.264Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="日课"><a href="#日课" class="headerlink" title="日课"></a>日课</h1><ol><li><p>吉他练习<br>内容：爬格子、《兰亭序》片段<br>用时：1小时。</p></li><li><p>《Git版本控制管理器》<br>内容：<br>1、git reset<br>git reset 命令会把版本库和工作目录改变为已知状态。具体而言，Git reset 调整HEAD引用指向给定的提交，默认情况下还会更新索引匹配该提交。</p></li></ol><p>get reset –soft<br>–soft会将HEAD引用指向给指定提交。索引和工作目录的内容保持不变。</p><p>git reset –mixed<br>–mixed会将HEAD指向给定提交。索引内容也跟着改变以符合给定提交的树结构，但是工作目录中的内容保持不变。</p><p>此模式为默认</p><p>git reset –hard<br>这条命令将HEAD引用指向给定提交。索引的内容也跟着改变以符合给定提交的树结构。此外，工作目录的内容也随之改变以反映给定提交表示的树的状态。</p><p>2、git cherry-pick<br>git cherry-pick提交命令会在当前分支上应用给定提交引入的变更。以当前分支的HEAD为起点拼接其他分支的提交。</p><p>3、git revert<br>此命令用于引入一个新提交来抵消给定提交的影响。revert命令不修改版本库的现存历史记录。相反它往历史记录中添加新提交。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;日课&quot;&gt;&lt;a href=&quot;#日课&quot; class=&quot;headerlink&quot; title=&quot;日课&quot;&gt;&lt;/a&gt;日课&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;吉他练习&lt;br&gt;内容：爬格子、《兰亭序》片段&lt;br&gt;用时：1小时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;《Git版本控制管理
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>2018-10-16-Diary</title>
