@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-24T01:41:12.304Z</updated>
+  <updated>2018-11-05T23:57:46.926Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>day working</title>
+    <link href="http://yoursite.com/2018/11/06/day-working/"/>
+    <id>http://yoursite.com/2018/11/06/day-working/</id>
+    <published>2018-11-05T23:55:02.000Z</published>
+    <updated>2018-11-05T23:57:46.926Z</updated>
+    
+    <content type="html"><![CDATA[<p>#2018-11-06<br>完成 群组相关接口的实现，并调试成功。<br>完成 群组接口涉及的数据类的实现。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#2018-11-06&lt;br&gt;完成 群组相关接口的实现，并调试成功。&lt;br&gt;完成 群组接口涉及的数据类的实现。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="day-working" scheme="http://yoursite.com/tags/day-working/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Q&amp;A in C++</title>
+    <link href="http://yoursite.com/2018/11/06/Q-A-in-C/"/>
+    <id>http://yoursite.com/2018/11/06/Q-A-in-C/</id>
+    <published>2018-11-05T22:35:47.000Z</published>
+    <updated>2018-11-05T23:49:05.510Z</updated>
+    
+    <content type="html"><![CDATA[<p>2018-11-06</p><ol><li>static</li></ol><p>a. what situation shoud use static member value or member function?</p><ol start="2"><li>virtual</li></ol><p>a. why destructor should be vitual in base calss?</p><ol start="3"><li>#pragma pack(n)</li></ol><p>a. #pragma pack(push)//保存对齐状态</p><p>   #pragma pack(4)<br>   struct test<br>   {<br>       char m1;<br>    double m4;<br>    int m3<br>   };</p><p>   #pragma pack(pop)//恢复对齐状态</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2018-11-06&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;static&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;a. what situation shoud use static member value or member function?&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;v
+      
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>help</title>
+    <link href="http://yoursite.com/2018/11/06/help-1/"/>
+    <id>http://yoursite.com/2018/11/06/help-1/</id>
+    <published>2018-11-05T22:32:15.000Z</published>
+    <updated>2018-11-05T23:49:05.511Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>2018-10-24-Diary</title>
@@ -418,52 +485,6 @@
     
     
       <category term="MFC" scheme="http://yoursite.com/tags/MFC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/09/02/123/"/>
-    <id>http://yoursite.com/2018/09/02/123/</id>
-    <published>2018-09-02T10:16:44.458Z</published>
-    <updated>2018-09-17T09:28:07.947Z</updated>
-    
-    <content type="html"><![CDATA[<hr><p>title: 123<br>date: 2018-09-02 18:16:44<br>categories: test1  </p><h2 id="tags-C-11"><a href="#tags-C-11" class="headerlink" title="tags: C++11"></a>tags: C++11</h2><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;hr&gt;
-&lt;p&gt;title: 123&lt;br&gt;date: 2018-09-02 18:16:44&lt;br&gt;categories: test1  &lt;/p&gt;
-&lt;h2 id=&quot;tags-C-11&quot;&gt;&lt;a href=&quot;#tags-C-11&quot; class=&quot;headerlink&quot; title=
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/09/02/hello-world/"/>
-    <id>http://yoursite.com/2018/09/02/hello-world/</id>
-    <published>2018-09-02T04:55:26.146Z</published>
-    <updated>2018-09-17T09:19:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
