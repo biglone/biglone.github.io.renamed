@@ -47,3 +47,8 @@ tags: day-working
 
 # 2018-11-14
 完成Model的改写
+
+已完成
+
+# 2018-11-15
+完成EduGroupListView、同EduGroupDelegate
