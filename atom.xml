@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-24T00:52:22.507Z</updated>
+  <updated>2019-06-24T01:00:25.286Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019_06_24-2019_06_28_week_jobs</title>
+    <link href="http://yoursite.com/2019/06/24/2019-06-24-2019-06-28-week-jobs/"/>
+    <id>http://yoursite.com/2019/06/24/2019-06-24-2019-06-28-week-jobs/</id>
+    <published>2019-06-24T00:58:20.000Z</published>
+    <updated>2019-06-24T01:00:25.286Z</updated>
+    
+    <content type="html"><![CDATA[<p>#一周工作</p><p>1、完成班级所有管理接口<br>2、尽可能完成班级管理的所有界面。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#一周工作&lt;/p&gt;
+&lt;p&gt;1、完成班级所有管理接口&lt;br&gt;2、尽可能完成班级管理的所有界面。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Weekly" scheme="http://yoursite.com/tags/Weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>2019_06_24_routine</title>
@@ -457,24 +482,6 @@
     
       <category term="test2" scheme="http://yoursite.com/categories/test2/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>testAutoOpen</title>
-    <link href="http://yoursite.com/2018/09/17/testAutoOpen/"/>
-    <id>http://yoursite.com/2018/09/17/testAutoOpen/</id>
-    <published>2018-09-17T02:16:27.000Z</published>
-    <updated>2018-09-17T09:28:34.764Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="test2" scheme="http://yoursite.com/categories/test2/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
