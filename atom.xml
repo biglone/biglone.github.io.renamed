@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-24T01:00:25.286Z</updated>
+  <updated>2019-06-26T09:41:39.999Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019-06-26-routine</title>
+    <link href="http://yoursite.com/2019/06/26/2019-06-26-routine/"/>
+    <id>http://yoursite.com/2019/06/26/2019-06-26-routine/</id>
+    <published>2019-06-26T00:43:08.000Z</published>
+    <updated>2019-06-26T09:41:39.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="今日工作内容"><a href="#今日工作内容" class="headerlink" title="今日工作内容"></a>今日工作内容</h1><p>完成班级管理的剩余几个接口，并调通；<br>完成班级学生信息的数据类。</p><p>接口还差三个没有完成</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;今日工作内容&quot;&gt;&lt;a href=&quot;#今日工作内容&quot; class=&quot;headerlink&quot; title=&quot;今日工作内容&quot;&gt;&lt;/a&gt;今日工作内容&lt;/h1&gt;&lt;p&gt;完成班级管理的剩余几个接口，并调通；&lt;br&gt;完成班级学生信息的数据类。&lt;/p&gt;
+&lt;p&gt;接口还差三个没有完成&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Routine" scheme="http://yoursite.com/tags/Routine/"/>
+    
+  </entry>
   
   <entry>
     <title>2019_06_24-2019_06_28_week_jobs</title>
@@ -458,29 +482,6 @@
     </summary>
     
       <category term="test3" scheme="http://yoursite.com/categories/test3/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>testAutoOpen</title>
-    <link href="http://yoursite.com/2018/09/17/testAutoOpen-1/"/>
-    <id>http://yoursite.com/2018/09/17/testAutoOpen-1/</id>
-    <published>2018-09-17T02:17:18.000Z</published>
-    <updated>2018-09-17T09:02:03.528Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="大家好"><a href="#大家好" class="headerlink" title="大家好"></a>大家好</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;大家好&quot;&gt;&lt;a href=&quot;#大家好&quot; class=&quot;headerlink&quot; title=&quot;大家好&quot;&gt;&lt;/a&gt;大家好&lt;/h1&gt;
-      
-    
-    </summary>
-    
-      <category term="test2" scheme="http://yoursite.com/categories/test2/"/>
     
     
   </entry>
