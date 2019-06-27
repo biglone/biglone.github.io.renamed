@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-26T09:41:39.999Z</updated>
+  <updated>2019-06-27T09:34:31.779Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019-06-27-routine</title>
+    <link href="http://yoursite.com/2019/06/27/2019-06-27-routine/"/>
+    <id>http://yoursite.com/2019/06/27/2019-06-27-routine/</id>
+    <published>2019-06-27T09:32:07.000Z</published>
+    <updated>2019-06-27T09:34:31.779Z</updated>
+    
+    <content type="html"><![CDATA[<p>#工作日常<br>1、修改完成消息免打扰。<br>2、用户头像使用二级缓存，以免见面卡顿。<br>3、实现并调通剩余的班级管理接口。</p><p>均完成。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#工作日常&lt;br&gt;1、修改完成消息免打扰。&lt;br&gt;2、用户头像使用二级缓存，以免见面卡顿。&lt;br&gt;3、实现并调通剩余的班级管理接口。&lt;/p&gt;
+&lt;p&gt;均完成。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Routine" scheme="http://yoursite.com/tags/Routine/"/>
+    
+  </entry>
   
   <entry>
     <title>2019-06-26-routine</title>
@@ -467,22 +492,6 @@
     
     
       <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>testAutoOpen</title>
-    <link href="http://yoursite.com/2018/09/17/testAutoOpen-2/"/>
-    <id>http://yoursite.com/2018/09/17/testAutoOpen-2/</id>
-    <published>2018-09-17T02:19:05.000Z</published>
-    <updated>2018-09-17T09:02:08.594Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="test3" scheme="http://yoursite.com/categories/test3/"/>
-    
     
   </entry>
   
